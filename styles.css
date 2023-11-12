@@ -1,0 +1,120 @@
+  * {
+	box-sizing: border-box;
+	--color-light: #f0f8ff;
+	--color-dark: #222;
+  }
+
+  body {
+	font-family: 'Courier New', Courier, monospace;
+	max-width: 60rem;
+	padding: 2rem 1.5rem;
+	margin: auto;
+	background-color: var(--color-dark);
+  }
+  
+  img {
+	vertical-align: middle;
+  }
+
+  p {
+	color: var(--color-light);
+	text-align: center;
+  }
+  
+  .container {
+	position: relative;
+	padding: 30px 80px 30px 80px;
+  }
+  
+  .holder::-webkit-scrollbar {
+	display: none;
+  }
+  
+  .slides {
+	display: none;
+  }
+  
+  .slides img {
+	width: 100%;
+  }
+
+  
+  /* Mobiles (portrait and landscape) */
+  @media only screen and (max-width: 600px) {
+	.prevContainer, .nextContainer {
+	  display: none;
+	  visibility: hidden;
+	}
+
+  }
+  .prevContainer, .nextContainer {
+	position: absolute;
+	top: 50%;
+	transform: translate(0, calc(-50% - 54px));
+	height: 54px;
+	width: 54px;
+	cursor: pointer;
+  }
+  
+  .prevContainer {
+	margin-left: 26px;
+	left: 0;
+	border-radius: 30px 0 0 30px;
+  }
+  
+  .prev {
+	position: relative;
+	top: 50%;
+	transform: translate(0, -50%);
+	height: 34px;
+	width: 34px;
+	float: left;
+	margin-left: 12px;
+  }
+  
+  .prev svg, .next svg {
+	fill: var(--color-light);
+  }
+  
+  .nextContainer {
+	margin-right: 26px;
+	right: 0;
+	border-radius: 0 30px 30px 0;
+  }
+  
+  .next {
+	position: relative;
+	top: 50%;
+	transform: translate(0, -50%);
+	height: 34px;
+	width: 34px;
+	float: right;
+	margin-right: 12px;
+  }
+  
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+
+  .column {
+	width: 150px;
+	height: 113px;
+	overflow: hidden;
+	display: flex;
+	float: left;
+	border-radius: 2px;
+	border: 2px solid var(--color-dark);
+  }
+  
+  .slide-thumbnail {
+	width: 100%;
+	opacity: 0.6;
+	cursor: pointer;
+  }
+  
+  .active,
+  .slide-thumbnail:hover {
+	opacity: 1;
+  }
