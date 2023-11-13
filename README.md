@@ -5,4 +5,5 @@
 
 * Found inspiring pictures of drops on Pixabay.
 * Text is from different quotes/sayings.
+* Used iconify in Figma and website (SVG) for arrow icons.
   
