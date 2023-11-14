@@ -1,5 +1,5 @@
 # Slideshow Task
-## Third FFU task following topics
+## 3rd FFU task following topics
 
 ### Figma, Html, Css, Javascript
 
