@@ -43,12 +43,16 @@
   }
   
   /* Mobiles (portrait and landscape) */
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 780px) {
 
-	.prevContainer, .nextContainer {
-	  display: none;
-	  visibility: hidden;
-	}
+	.slides img {
+		width: 60%;
+		height: 80%;
+	  }
+
+	  #caption {
+		font-size: 12px;
+	  }
 
   }
   .prevContainer, .nextContainer {
@@ -118,7 +122,6 @@
 	cursor: pointer;
   }
   
-  .active,
-  .slide-thumbnail:hover {
+  .active, .slide-thumbnail:hover {
 	opacity: 1;
   }
